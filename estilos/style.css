@@ -96,7 +96,6 @@ header .logo {
 }
 main {
     width: 99%;
-    /*border: 5px solid black;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,12 +216,7 @@ basket*/
     background-color: black;
 }
 
-/*.btn-futbol{
-    width: 26%;
-}
-.btn-futbol{
-    background-color: violet;
-}*/
+
 /*futbol*/
 #españa {
     display: flex;
@@ -273,46 +267,7 @@ basket*/
     font-size: 20px;
 }
 /*futbol*/
-/*.contenedor-grid {
-    display: grid;
-    grid-template-areas: 
-    "h3      img       img"
-    "h3      img      img"
-    "p        p        p";
-    grid-template-columns: repeat(3,20%);
-    grid-template-rows: 180px 100px 100px;
-    justify-content: end;
-}
-.contenedor-grid {
-    border: 1px none black;
-    margin: 5px 0px;
-}
-.contenedor-grid  img{
-    width: 100%;
-    height: 100%;
-}
-.grid-item-tres{
-    font-size: 20px;
-    width: 100%;
-    justify-content: start;
-    margin: 0px;
-    padding-top: 5px;
-    grid-area: h3;
-}
-.grid-item-cuatro{
-    background-color: #000000;
-    justify-content: end;
-    grid-area: img;
-    border-radius: 0px;
-    margin: 0px;
-}
-.grid-item-cinco{
-    font-size: 15px;
-    text-align: justify;
-    margin: 0px;
-    padding: 10px;
-    grid-area: p;
-}*/
+
 .contenedor-grid {
     display: grid;
     grid-template-areas: 
@@ -535,27 +490,9 @@ footer a{
     -webkit-border-radius: 158px 158px 158px 158px;
     -moz-border-radius: 158px 158px 158px 158px;
 }
-/*footer futbol
-.footer-fut {
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} 
-.footer-fut img {
-     width: 150px; 
-     border: 11px double gray;
-}
-.footer-fut ul {
-    color: white;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1,5rem;
-    text-align: left;
-    font-weight: bold;
-    text-decoration: double;
-    margin-left: 3%;
-}
-*/
+
+
+
 /*mobile friendly*/
 @media only screen and (max-width:500px) {
     header {
@@ -627,21 +564,12 @@ footer a{
     }
     .contenedor-grid {
         grid-template-areas: 
-        "h1"
-        "h2"
         "img"
         "p";
         grid-template-columns: 100%;
-        grid-template-areas: 50px 30px 250px 150px;
+        grid-template-areas: 250px 150px;
     }
-    .grid-item-uno {
-        font-size: 30px;
-        text-align: center;
-    }
-    .grid-item-dos {
-        font-size: 25px;
-    }
-    .grid-item-tres {
+   .grid-item-tres {
         display: none;
     }
     .grid-item-cinco {
