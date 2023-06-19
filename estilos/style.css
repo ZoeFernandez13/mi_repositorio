@@ -26,7 +26,7 @@ p {
 }
 
 
-/**header**/
+/**header todos--------------------------------------------------**/
 
 header {
     background-color: #000000;
@@ -156,7 +156,7 @@ main p {
     margin-bottom: 1%;
     padding: 2%;
 }
-/*header basket*/
+/*header basket---------------------------------------------------------------*/
 .enlace-uno {
     text-decoration: none;
     color: violet;
@@ -177,7 +177,7 @@ main p {
 }
 
 /*main otros
-basket*/
+basket (bts)--------------------------------------------------------*/
 .basket{
     background-color: violet;
     height: auto
@@ -217,7 +217,7 @@ basket*/
 }
 
 
-/*futbol*/
+/*futbol-----------------------------------------------------*/
 #españa {
     display: flex;
     flex-direction: column;
@@ -266,8 +266,7 @@ basket*/
 #inglaterra p{
     font-size: 20px;
 }
-/*futbol*/
-
+/*argentina------------------------------------------*/
 .contenedor-grid {
     display: grid;
     grid-template-areas: 
@@ -310,7 +309,7 @@ basket*/
     grid-area: p;
 }
 
-
+/*españa------------------------------------------------------------*/
 .contenedor-grid-dos {
     display: grid;
     grid-template-areas: 
@@ -350,6 +349,8 @@ basket*/
     padding: 10px;
     grid-area: p;
 }
+
+/*francia-----------------------------------------------*/
 .contenedor-grid-tres {
     display: grid;
     grid-template-areas: 
@@ -389,6 +390,8 @@ basket*/
         padding: 10px;
         grid-area: p;
 }    
+
+/*inglaterra-----------------------------------------------*/
 .contenedor-grid-cuatro {
     display: grid;
     grid-template-areas: 
@@ -429,7 +432,7 @@ basket*/
     grid-area: p;
 }
 
-/**footer**/
+/**footer todos-----------------------------------------------------------------**/
 footer {
     background-color: #000000;
     display: flex;
@@ -533,7 +536,7 @@ footer a{
         width: 15px;
     }
     main {
-        border: 1px solid black;
+        border: 1px none black;
     }
     main h1 {
         font-size:40px;
@@ -562,19 +565,59 @@ footer a{
     main #inglaterra p{
         font-size: 15px;
     }
+    /*futbol argentina-------------------------------------------------*/
     .contenedor-grid {
         grid-template-areas: 
         "img"
         "p";
-        grid-template-columns: 100%;
-        grid-template-areas: 250px 150px;
+        grid-template-columns: 80%;
+        grid-template-rows: 150px 100px;
     }
-   .grid-item-tres {
-        display: none;
+    .contenedor-grid{ justify-content: center;}
+    .grid-item-cuatro{ width: auto; }
+    .grid-item-tres{ display: none; }
+    .grid-item-cinco{ font-size: 12px;}
+
+    /*españa------------------------------------------------------------*/
+    .contenedor-grid-dos {
+        grid-template-areas: 
+        "img"
+        "p";
+        grid-template-columns: 80%;
+        grid-template-rows: 150px 100px;
     }
-    .grid-item-cinco {
-        font-size: 15px;
+    .contenedor-grid-dos{ justify-content: center; }
+    .grid-i-uno { width: auto;}
+    .grid-i-dos{ display: none; }
+    .grid-i-tres{ font-size: 10px; }
+
+    /*francia-------------------------------------------------------------*/
+    .contenedor-grid-tres {
+        grid-template-areas: 
+        "img"
+        "p";
+        grid-template-columns: 80%;
+        grid-template-rows: 150px 150px;
     }
+    .contenedor-grid-tres{ justify-content: center; }
+    .g-item-uno{ width: auto; }
+    .g-item-dos{ display: none; }
+    .g-item-tres{ font-size: 10px; }
+
+    /*inglaterra---------------------------------------------------------*/
+    .contenedor-grid-cuatro {
+        grid-template-areas: 
+        "img"
+        "p";
+        grid-template-columns: 80%;
+        grid-template-rows: 150px 100px;
+    }
+    .contenedor-grid-cuatro{ justify-content: center; }
+    .g-i-uno{ width: auto; }
+    .g-i-dos{ display: none; }
+    .g-i-tres{ font-size: 10px; }
+
+    /*foter de todos en mobile--------------------------------------------------------------------------------*/
     footer p {
         font-size: 15x;
     }
